@@ -249,6 +249,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1123,7 +1136,46 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MagoAtaque_0: -3668840541284343268
+      MagoAtaque_1: 9210727004372734824
+      MagoAtaque_10: -3959741436870146006
+      MagoAtaque_11: 4613676403762350220
+      MagoAtaque_12: 8323312641265343333
+      MagoAtaque_13: 1093683767242219756
+      MagoAtaque_14: 3245152832264744887
+      MagoAtaque_15: 7614561739831417438
+      MagoAtaque_16: -1908603072922663342
+      MagoAtaque_17: 6566612934671223898
+      MagoAtaque_18: -4936500093749390337
+      MagoAtaque_19: 6923446829807833630
+      MagoAtaque_2: 3158270748695533818
+      MagoAtaque_20: -3094815297045913324
+      MagoAtaque_21: -634921910914363161
+      MagoAtaque_22: -9139077202822141118
+      MagoAtaque_23: -5603352124850036353
+      MagoAtaque_24: 8281563574905641631
+      MagoAtaque_25: -840575313753075282
+      MagoAtaque_26: 790304277360937242
+      MagoAtaque_27: 6737945458327719458
+      MagoAtaque_28: -1733735624392661086
+      MagoAtaque_29: 1264177122440868078
+      MagoAtaque_3: 10258802749255477
+      MagoAtaque_30: -624757013209847243
+      MagoAtaque_31: -7434201527308974665
+      MagoAtaque_32: -7499929945537796061
+      MagoAtaque_33: -160533867890059060
+      MagoAtaque_34: -3790042495672585181
+      MagoAtaque_35: -462391692863592520
+      MagoAtaque_36: -1723905081507021193
+      MagoAtaque_37: 3379161659320042985
+      MagoAtaque_38: 1012894630333845049
+      MagoAtaque_4: 1013946261272896811
+      MagoAtaque_5: 7327280896401500389
+      MagoAtaque_6: -6314953538440200438
+      MagoAtaque_7: -4690832749590271486
+      MagoAtaque_8: 4088630563986578739
+      MagoAtaque_9: -1103575349140140409
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

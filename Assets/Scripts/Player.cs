@@ -245,6 +245,12 @@ public class Player : MonoBehaviour
 
     public void PlaySomVitoria()
     {
+        StartCoroutine(timerSomVitoria());
+    }
+
+    IEnumerator timerSomVitoria()
+    {
+        yield return new WaitForSeconds(1.5f);
         audioSource.PlayOneShot(somVitoria);
     }
 }

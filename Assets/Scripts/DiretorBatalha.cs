@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DiretorBatalha : MonoBehaviour
@@ -34,7 +35,7 @@ public class DiretorBatalha : MonoBehaviour
     void Update()
     {
 
-        if(turno == "Player" && verificadorDeTurno && player.VerificaVida())
+        if (turno == "Player" && verificadorDeTurno && player.VerificaVida())
         {
             botaoAtaque.interactable = true;
 
@@ -49,7 +50,7 @@ public class DiretorBatalha : MonoBehaviour
 
             verificadorDeTurno = false;
         }
-        else if(turno == "Inimigo" && verificadorDeTurno && inimigo.VerificaVida())
+        else if (turno == "Inimigo" && verificadorDeTurno && inimigo.VerificaVida())
         {
             StartCoroutine(AtaqueInimigo());
         }
@@ -131,5 +132,10 @@ public class DiretorBatalha : MonoBehaviour
             player.PlaySomMorte();
             textoTextoDerrota.SetActive(true);
         }
+    }
+
+    public void ReiniciarJogo()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

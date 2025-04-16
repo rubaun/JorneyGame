@@ -79,4 +79,12 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("FlorestaEsquerda");
     }
+
+    //Metodo gererico para carregar a cena
+
+    public void CarregarCena(string nomeCena)
+    {
+        SceneManager.LoadScene(nomeCena);
+    }
+
 }

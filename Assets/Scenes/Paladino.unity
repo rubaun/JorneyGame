@@ -1010,8 +1010,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9944d75b6b44c0546a72212451c2eecd, type: 3}
-  m_Resource: {fileID: 8300000, guid: 9944d75b6b44c0546a72212451c2eecd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 835aa289c5e64e543a2a605b95a3b0b9, type: 3}
+  m_Resource: {fileID: 8300000, guid: 835aa289c5e64e543a2a605b95a3b0b9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1308,7 +1308,20 @@ MonoBehaviour:
   vida: 100
   ataque: 45
   defesa: 78
+  especial: 0
   estahVivo: 1
+  dB: {fileID: 0}
+  spriteDerrota: {fileID: 0}
+  ehHeroi: 0
+  pDesefa: {fileID: 0}
+  pSangrar: {fileID: 0}
+  somAtaque: []
+  somDefesa: []
+  somEspecial: []
+  somErroAtaque: []
+  somDano: []
+  somVitoria: {fileID: 0}
+  somMorte: {fileID: 0}
 --- !u!212 &1898940136
 SpriteRenderer:
   m_ObjectHideFlags: 0

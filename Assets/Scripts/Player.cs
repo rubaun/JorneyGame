@@ -60,6 +60,10 @@ public class Player : MonoBehaviour
         }
     }
 
+    public int ValorEspecial()
+    {
+        return especial;
+    }
 
     public int Ataque()
     {

@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomePersonagem: Orc Vorazin
-  vida: 100
+  vida: 90
   ataque: 47
   defesa: 75
   especial: 0

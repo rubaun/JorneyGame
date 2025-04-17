@@ -34,6 +34,7 @@ public class DiretorBatalha : MonoBehaviour
 
     void Update()
     {
+        AtualizaDadosTela();
 
         if (turno == "Player" && verificadorDeTurno && player.VerificaVida())
         {
@@ -97,7 +98,6 @@ public class DiretorBatalha : MonoBehaviour
             botaoAtaque.interactable = false;
             botaoEspecial.interactable = false;
             player.LevarDano(inimigo.Ataque());
-            AtualizaDadosTela();
             yield return new WaitForSeconds(5f);
             verificadorDeTurno = true;
             turno = "Player";
@@ -113,7 +113,6 @@ public class DiretorBatalha : MonoBehaviour
 
         if (turno == "Player")
         {
-            AtualizaDadosTela();
             yield return new WaitForSeconds(5f);
             verificadorDeTurno = true;
             turno = "Inimigo";
@@ -124,14 +123,21 @@ public class DiretorBatalha : MonoBehaviour
     {
         if (!inimigo.VerificaVida())
         {
-            player.PlaySomVitoria();
-            textoTextoVitoria.SetActive(true);
+            StartCoroutine(TelaVitoria());
         }
         else if (!player.VerificaVida())
         {
             player.PlaySomMorte();
             textoTextoDerrota.SetActive(true);
         }
+    }
+
+    IEnumerator TelaVitoria()
+    {
+        yield return new WaitForSeconds(2.0f);
+        player.PlaySomVitoria();
+        yield return new WaitForSeconds(1.0f);
+        textoTextoVitoria.SetActive(true);
     }
 
     public void ReiniciarJogo()

@@ -553,8 +553,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0010929, y: -88.7222}
-  m_SizeDelta: {x: 742.59, y: 532.285}
+  m_AnchoredPosition: {x: 0.0000057328, y: -25.134}
+  m_SizeDelta: {x: 1239.6187, y: 588.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1538338761
 MonoBehaviour:
@@ -579,7 +579,8 @@ MonoBehaviour:
   m_text: "Ruben Prado - Desenvolvedor\n\n--\n\nMusicas\nThe Road To Mordor - Ezra
     Lipp\nBattle march action - \nSound Effect by Universfield from Pixabay\nMinifantasy
     RPG Dungeon Music - Leohpaz\nLet's Adventure Music Pack- Sara Garrard\nSuper
-    Dialogue Audio Pack V1  - Dillon Becker"
+    Dialogue Audio Pack V1  - Dillon Becker\nZombie Massacre Sound Effects Starter
+    Pack - TerrorByteGames"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

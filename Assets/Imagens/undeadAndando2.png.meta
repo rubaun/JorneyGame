@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      undeadAndando2_0: 7021334166690156205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

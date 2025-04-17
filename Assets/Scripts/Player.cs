@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     [SerializeField] private AudioClip[] somDano;
     [SerializeField] private AudioClip somVitoria;
     [SerializeField] private AudioClip somMorte;
+    [SerializeField] private AudioClip somEspecialPronto;
+    [SerializeField] private Camera camera;
 
     private Animator anim;
     private SpriteRenderer spriteRenderer;
@@ -52,6 +54,8 @@ public class Player : MonoBehaviour
     {
         if (especial >= 3)
         {
+            dB.RecebeTexto($"{nomePersonagem} especial pronto!");
+            audioSource.PlayOneShot(somEspecialPronto);
             return true;
         }
         else
@@ -110,12 +114,13 @@ public class Player : MonoBehaviour
     {
         int valorEspecial = Random.Range(20, ataque);
         int chanceDeDobrar = Random.Range(0, 100);
+        int fatorMultiplicador = especial;
 
         AnimaAtaque();
 
         if (chanceDeDobrar >= 90 && especial >= 3)
         {
-            int valorEspecialDobrado = valorEspecial * 2;
+            int valorEspecialDobrado = (valorEspecial * 2) + fatorMultiplicador;
             dB.RecebeTexto("ARgh! Sede de Vinguança!");
             dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecialDobrado}");
             PlaySomEspecial();
@@ -143,29 +148,16 @@ public class Player : MonoBehaviour
 
         if (danoFinal <= 0)
         {
-            dB.RecebeTexto($"{nomePersonagem} consegue se defender!");
-            anim.SetTrigger("Defesa");
-            PlaySomDefesa();
-            ParticulaDefesa();
+            StartCoroutine(TocarDefesa());
         }
         else if (danoFinal <= 25)
         {
-            dB.RecebeTexto($"{nomePersonagem} leva dano de {danoFinal}.");
-            anim.SetTrigger("Dano");
-            PlaySomDano();
-            ParticulaSangrar();
-            vida -= danoFinal; //vida = vida - danoFinal;
+            StartCoroutine(TocarDanoNormal(danoFinal));
         }
         else
         {
-            dB.RecebeTexto($"{nomePersonagem} toma uma porrada de {danoFinal}.");
-            anim.SetTrigger("Dano");
-            PlaySomDano();
-            ParticulaSangrar();
-            vida -= danoFinal;
+            StartCoroutine(TocarDanoMaximo(danoFinal));
         }
-
-        DefineVida();
 
         if (estahVivo)
         {
@@ -183,6 +175,7 @@ public class Player : MonoBehaviour
         if (vida <= 0)
         {
             spriteRenderer.sprite = spriteDerrota;
+            vida = 0;
             estahVivo = false; //Ta morto
         }
     }
@@ -245,12 +238,50 @@ public class Player : MonoBehaviour
 
     public void PlaySomVitoria()
     {
-        StartCoroutine(timerSomVitoria());
+        audioSource.PlayOneShot(somVitoria);
+    }
+
+    IEnumerator TocarDefesa()
+    {
+        dB.RecebeTexto($"{nomePersonagem} consegue se defender!");
+        anim.SetTrigger("Defesa");
+        yield return new WaitForSeconds(0.5f);
+        PlaySomDefesa();
+        ParticulaDefesa();
+    }
+
+    IEnumerator TocarDanoNormal(int danoFinal)
+    {
+        dB.RecebeTexto($"{nomePersonagem} leva dano de {danoFinal}.");
+        anim.SetTrigger("Dano");
+        yield return new WaitForSeconds(0.5f);
+        PlaySomDano();
+        ParticulaSangrar();
+        vida -= danoFinal; //vida = vida - danoFinal;
+        DefineVida();
+    }
+
+    IEnumerator TocarDanoMaximo(int danoFinal)
+    {
+        dB.RecebeTexto($"{nomePersonagem} toma uma porrada de {danoFinal}.");
+        anim.SetTrigger("Dano");
+        yield return new WaitForSeconds(0.5f);
+        CameraTreme(danoFinal * 0.1f);
+        PlaySomDano();
+        ParticulaSangrar();
+        vida -= danoFinal;
+        DefineVida();
     }
 
     IEnumerator timerSomVitoria()
     {
         yield return new WaitForSeconds(1.5f);
         audioSource.PlayOneShot(somVitoria);
+    }
+
+    private void CameraTreme(float magnitude)
+    {
+        audioSource.PlayOneShot(somVitoria);
+        camera.GetComponent<CameraShake>().ShakeCamera(0.5f, magnitude);
     }
 }

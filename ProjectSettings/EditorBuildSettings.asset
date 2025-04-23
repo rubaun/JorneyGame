@@ -24,22 +24,22 @@ EditorBuildSettings:
     path: Assets/Scenes/Druida.unity
     guid: 958f0ae0c0869fa42ab40c5a1fe4d185
   - enabled: 1
-    path: Assets/Scenes/Floresta/EscolhaFloresta.unity
+    path: Assets/Scenes/Floresta/Paladino/EscolhaFloresta.unity
     guid: 06c4ab80b81f43840ae8daa468686044
   - enabled: 1
-    path: Assets/Scenes/Floresta/FlorestaDireita.unity
+    path: Assets/Scenes/Floresta/Paladino/FlorestaDireita.unity
     guid: 5c6056ca78b1d80468b1cad4bf887575
   - enabled: 1
-    path: Assets/Scenes/Floresta/FlorestaEsquerda.unity
+    path: Assets/Scenes/Floresta/Paladino/FlorestaEsquerda.unity
     guid: 06f859b8f5719a24498d9e7306df25f7
   - enabled: 1
-    path: Assets/Scenes/Floresta/FlorestaEsquerdaBatalha.unity
+    path: Assets/Scenes/Floresta/Paladino/FlorestaEsquerdaBatalha.unity
     guid: 49ab26189febdce4ca09284e71f535de
   - enabled: 1
-    path: Assets/Scenes/Floresta/FlorestaSaidaEsquerda.unity
+    path: Assets/Scenes/Floresta/Paladino/FlorestaSaidaEsquerda.unity
     guid: 0509a4e9ea7d103448fe65e8dc92ba6b
   - enabled: 1
-    path: Assets/Scenes/Desfiladeiro/DesfiladeiroEsquerdaBatalha.unity
+    path: Assets/Scenes/Desfiladeiro/Paladino/DesfiladeiroEsquerdaBatalha.unity
     guid: f5a59a338617eb444b9dd248b88e1035
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

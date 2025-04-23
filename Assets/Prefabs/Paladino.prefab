@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6456503437955554877}
   - component: {fileID: 4077499885662778068}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Paladino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -27,12 +27,30 @@ public class Player : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spriteRenderer;
     private AudioSource audioSource;
+    private FalasPersonagem falasPersonagem;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
+
+        if(!falasPersonagem && !ehHeroi)
+        {
+            falasPersonagem = GetComponent<FalasPersonagem>();
+        }
+    }
+
+    public void FalaDoPersonagem(string tipoDeFala)
+    {
+        if(falasPersonagem != null && !ehHeroi && tipoDeFala == "Ataque")
+        {
+            falasPersonagem.FalaDeAtaque();
+        }
+        else if (falasPersonagem != null && !ehHeroi && tipoDeFala == "Defesa")
+        {
+            falasPersonagem.FalaDeDefesa();
+        }
     }
 
     public string GetNomePersonagem()
@@ -79,6 +97,7 @@ public class Player : MonoBehaviour
 
         if (valorAtaque > 0)
         {
+            FalaDoPersonagem("Ataque");
             dB.RecebeTexto("ARgh! Sinta Minha Furia!");
             dB.RecebeTexto($"{nomePersonagem} ataca com {valorAtaque}");
             PlaySomAtaque();
@@ -99,6 +118,7 @@ public class Player : MonoBehaviour
 
         if(valorDefesa > 0)
         {
+            FalaDoPersonagem("Defesa");
             dB.RecebeTexto($"{nomePersonagem} defende com {valorDefesa}");
         }
         else
@@ -121,6 +141,7 @@ public class Player : MonoBehaviour
         if (chanceDeDobrar >= 90 && especial >= 3)
         {
             int valorEspecialDobrado = (valorEspecial * 2) + fatorMultiplicador;
+            FalaDoPersonagem("Ataque");
             dB.RecebeTexto("ARgh! Sede de Vinguança!");
             dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecialDobrado}");
             PlaySomEspecial();
@@ -129,6 +150,7 @@ public class Player : MonoBehaviour
         }
         else if (chanceDeDobrar < 90 && especial >= 3)
         {
+            FalaDoPersonagem("Ataque");
             dB.RecebeTexto("ARgh! Vou te esmagar!");
             dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecial}");
             PlaySomAtaque();

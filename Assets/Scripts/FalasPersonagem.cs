@@ -42,7 +42,7 @@ public class FalasPersonagem : MonoBehaviour
         falaTexto.GetComponent<TextMeshProUGUI>().text = falas[Random.Range(4,6)];
         balaoFala.GetComponent<Animator>().SetTrigger("FalaAgora");
         falaTexto.GetComponent<Animator>().SetTrigger("FalaAgora");
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3.5f);
         balaoFala.GetComponent<Animator>().SetTrigger("CalaBoca");
         falaTexto.GetComponent<Animator>().SetTrigger("CalaBoca");
         falaTexto.GetComponent<TextMeshProUGUI>().text = "";
@@ -58,7 +58,7 @@ public class FalasPersonagem : MonoBehaviour
         falaTexto.GetComponent<TextMeshProUGUI>().text = falas[Random.Range(1, 3)];
         balaoFala.GetComponent<Animator>().SetTrigger("FalaAgora");
         falaTexto.GetComponent<Animator>().SetTrigger("FalaAgora");
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3.5f);
         balaoFala.GetComponent<Animator>().SetTrigger("CalaBoca");
         falaTexto.GetComponent<Animator>().SetTrigger("CalaBoca");
         falaTexto.GetComponent<TextMeshProUGUI>().text = "";

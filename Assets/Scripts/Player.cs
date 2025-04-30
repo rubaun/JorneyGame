@@ -288,7 +288,7 @@ public class Player : MonoBehaviour
         dB.RecebeTexto($"{nomePersonagem} toma uma porrada de {danoFinal}.");
         anim.SetTrigger("Dano");
         yield return new WaitForSeconds(0.5f);
-        CameraTreme(danoFinal * 0.1f);
+        CameraTreme(0.5f);
         PlaySomDano();
         ParticulaSangrar();
         vida -= danoFinal;

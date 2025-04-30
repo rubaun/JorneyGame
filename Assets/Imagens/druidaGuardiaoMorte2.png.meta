@@ -223,7 +223,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      druidaGuardiaoMorte2_0: 1793645207022803005
+      druidaGuardiaoMorte2_1: 974923891750108851
+      druidaGuardiaoMorte2_2: 2079415380716800130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      clareiraPortal_0: 3199425845850816216
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

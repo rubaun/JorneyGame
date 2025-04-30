@@ -255,6 +255,148 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50716755}
   m_CullTransparentMesh: 1
+--- !u!1 &242308751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 242308753}
+  - component: {fileID: 242308752}
+  m_Layer: 0
+  m_Name: Orc 1_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &242308752
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242308751}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 5265301617762216110, guid: a0c9c5059b47a59448969aebede3b473, type: 3}
+  m_Color: {r: 0.5698112, g: 0.5698112, b: 0.5698112, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 6.9, y: 9.76}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &242308753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242308751}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04243049, y: -5.207223, z: 0}
+  m_LocalScale: {x: 0.67732894, y: 0.7094194, z: 1.1769023}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1356804899}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &290294031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 290294033}
+  - component: {fileID: 290294032}
+  m_Layer: 0
+  m_Name: Cenario
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &290294032
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290294031}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 85c2b35586e70a040ba26713cf58d850, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &290294033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290294031}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1166.0319, y: 231.61185, z: 1.0337969}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1356804899}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &325857256
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,9 +959,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -2483927609062372246, guid: e14879b8221d1a04cb2a10663e66227d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.05490196}
-  m_FlipX: 1
+  m_Sprite: {fileID: 7021334166690156205, guid: 337d816b551840b41ad6c8e560d35f56, type: 3}
+  m_Color: {r: 0.24242781, g: 0.2981131, b: 0.27424797, a: 1}
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 3.57, y: 5.68}
@@ -837,11 +979,11 @@ Transform:
   m_GameObject: {fileID: 920681114}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.41, y: -1.48, z: 0}
-  m_LocalScale: {x: 0.22855641, y: 0.22989279, z: 0.31837246}
+  m_LocalPosition: {x: 0.7973179, y: -1.658194, z: 0}
+  m_LocalScale: {x: 0.27437744, y: 0.26995397, z: 0.31837246}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1356804899}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1214815201
 GameObject:
@@ -900,7 +1042,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Seguindo Pelo Portal Misterioso
+  m_text: Seguindo ao Desfiladeiro das Almas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1fea70f1b2bc8b64180e4cf6b4b726aa, type: 2}
   m_sharedMaterial: {fileID: 7876251607848186625, guid: 1fea70f1b2bc8b64180e4cf6b4b726aa, type: 2}
@@ -927,7 +1069,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 60.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1036,10 +1178,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ap\xF3s desvendar o en\xEDgma da criatura misteriosa, voc\xEA atravessa
-    o portal por acreditar que essa passagem lhe permitir\xE1 chegar mais r\xE1pido
-    ao seu destino. \nAt\xE9 agora tudo parece estar correndo bem. O que pode acontecer
-    de errado?"
+  m_text: "Ap\xF3s derrotar o Orc, voc\xEA encontra uma passagem secreta que leva
+    a um desfiladeiro.\n\nL\xE1, voc\xEA encontra esp\xEDritos de Guerreiros mortos-vivos
+    que vagam, presos em uma maldi\xE7\xE3o."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1246,10 +1387,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texto: {fileID: 1295041824}
-  mensagemCompleta: "Ap\xF3s desvendar o en\xEDgma da criatura misteriosa, voc\xEA
-    atravessa o portal por acreditar que essa passagem lhe permitir\xE1 chegar mais
-    r\xE1pido ao seu destino. \nAt\xE9 agora tudo parece estar correndo bem. O que
-    pode acontecer de errado?"
+  mensagemCompleta: "Ap\xF3s derrotar o Orc, voc\xEA encontra uma passagem secreta
+    que leva a um desfiladeiro.\n\nL\xE1, voc\xEA encontra esp\xEDritos de Guerreiros
+    mortos-vivos que vagam, presos em uma maldi\xE7\xE3o."
   velocidadeDigitacao: 0.05
   som: {fileID: 8300000, guid: 201471410c7edc446a5f66b83ad572ba, type: 3}
 --- !u!4 &1300629035
@@ -1328,8 +1468,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3199425845850816216, guid: 7dbb2bba5e44a5f4c8945d44a1e43a3a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 883396217241852502, guid: 6f7900f58604b904babb5901078eea24, type: 3}
+  m_Color: {r: 0.8867924, g: 0.6006764, b: 0.6006764, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -1348,11 +1488,13 @@ Transform:
   m_GameObject: {fileID: 1356804897}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.49, y: 1.5144153, z: 1.284101}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_LocalPosition: {x: -1169.052, y: -226.83185, z: -1.033797}
+  m_LocalScale: {x: 1.8938615, y: 1.9248945, z: 1.632154}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 242308753}
+  - {fileID: 920681116}
+  m_Father: {fileID: 290294033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1461136009
 GameObject:
@@ -1579,5 +1721,4 @@ SceneRoots:
   - {fileID: 693381498}
   - {fileID: 1718367362}
   - {fileID: 1300629035}
-  - {fileID: 1356804899}
-  - {fileID: 920681116}
+  - {fileID: 290294033}

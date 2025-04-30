@@ -381,14 +381,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texto: {fileID: 1171682797}
-  mensagemCompleta: 'Um artefato ancestral, o Crepusculo Perdido, capaz de controlar
-    o  nascer e o por do sol, esta escondido nas ruinas de um reino esquecido.
-
-
-    Voce;
-    um aventureiro com sangue elfico, convocado por uma visao profetica para impedir
-    que o artefato caia nas maos da Ordem das Sombras, um culto que planeja mergulhar
-    o mundo em escuridao eterna.'
+  mensagemCompleta: "Um artefato ancestral, o Crepusculo Perdido, capaz de controlar
+    o  nascer e o por do sol, esta escondido nas ruinas de um reino esquecido.\n\nVoce
+    \xE9 Anduino, um Paladino aventureiro, convocado por uma visao profetica para
+    impedir que o artefato caia nas maos da Ordem das Sombras, um culto que planeja
+    mergulhar o mundo em escuridao eterna."
   velocidadeDigitacao: 0.05
   som: {fileID: 8300000, guid: 201471410c7edc446a5f66b83ad572ba, type: 3}
 --- !u!82 &243363183
@@ -1322,6 +1319,8 @@ MonoBehaviour:
   somDano: []
   somVitoria: {fileID: 0}
   somMorte: {fileID: 0}
+  somEspecialPronto: {fileID: 0}
+  camera: {fileID: 0}
 --- !u!212 &1898940136
 SpriteRenderer:
   m_ObjectHideFlags: 0

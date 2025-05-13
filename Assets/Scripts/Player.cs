@@ -98,7 +98,6 @@ public class Player : MonoBehaviour
         if (valorAtaque > 0)
         {
             FalaDoPersonagem("Ataque");
-            dB.RecebeTexto("ARgh! Sinta Minha Furia!");
             dB.RecebeTexto($"{nomePersonagem} ataca com {valorAtaque}");
             PlaySomAtaque();
         }
@@ -142,7 +141,6 @@ public class Player : MonoBehaviour
         {
             int valorEspecialDobrado = (valorEspecial * 2) + fatorMultiplicador;
             FalaDoPersonagem("Ataque");
-            dB.RecebeTexto("ARgh! Sede de Vinguança!");
             dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecialDobrado}");
             PlaySomEspecial();
             especial = 0;
@@ -151,7 +149,6 @@ public class Player : MonoBehaviour
         else if (chanceDeDobrar < 90 && especial >= 3)
         {
             FalaDoPersonagem("Ataque");
-            dB.RecebeTexto("ARgh! Vou te esmagar!");
             dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecial}");
             PlaySomAtaque();
             especial = 0;

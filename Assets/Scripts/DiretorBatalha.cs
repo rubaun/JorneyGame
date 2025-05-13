@@ -127,17 +127,25 @@ public class DiretorBatalha : MonoBehaviour
         }
         else if (!player.VerificaVida())
         {
-            player.PlaySomMorte();
-            textoTextoDerrota.SetActive(true);
+            StartCoroutine(TelaMorte());
         }
     }
 
     IEnumerator TelaVitoria()
     {
-        yield return new WaitForSeconds(2.0f);
+        GameObject.Find("Audio Source").GetComponent<AudioSource>().Stop();
+        yield return new WaitForSeconds(1.0f);
         player.PlaySomVitoria();
         yield return new WaitForSeconds(1.0f);
         textoTextoVitoria.SetActive(true);
+    }
+
+    IEnumerator TelaMorte()
+    {
+        GameObject.Find("Audio Source").GetComponent<AudioSource>().Stop();
+        yield return new WaitForSeconds(1.0f);
+        player.PlaySomMorte();
+        textoTextoDerrota.SetActive(true);
     }
 
     public void ReiniciarJogo()

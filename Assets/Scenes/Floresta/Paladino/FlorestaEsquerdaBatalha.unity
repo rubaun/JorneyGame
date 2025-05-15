@@ -428,7 +428,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
   m_PrefabInstance: {fileID: 2147519131684806214}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147519131684806215}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44586fea7e8b3b54fb4ee4ace5ef2175, type: 3}
@@ -3718,7 +3718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: ataque
-      value: 10
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: camera
@@ -3726,7 +3726,7 @@ PrefabInstance:
       objectReference: {fileID: 1461136012}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: defesa
-      value: 10
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: somEspecialPronto
@@ -3836,41 +3836,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: balaoFala
+      value: 
+      objectReference: {fileID: 1228682583}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: falaTexto
+      value: 
+      objectReference: {fileID: 1888812576}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: falas.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[0]'
+      value: Ahrg! Aaaa
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[1]'
+      value: Hahaha
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[2]'
+      value: "Nem um arranh\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[3]'
+      value: Espere a minha vez
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[4]'
+      value: Sinta minha Ira
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[5]'
+      value: Verme
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[6]'
+      value: "Miser\xE1vel"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4435741936861119199, guid: 631fc42460058a846a134765df22ee7b, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 2147519131684806216}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 631fc42460058a846a134765df22ee7b, type: 3}
---- !u!1 &2147519131684806215 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4435741936861119199, guid: 631fc42460058a846a134765df22ee7b, type: 3}
-  m_PrefabInstance: {fileID: 2147519131684806214}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2147519131684806216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147519131684806215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b792cf9fd65b0843a69843a23d5c62d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  falaTexto: {fileID: 1888812576}
-  balaoFala: {fileID: 1228682583}
-  falas:
-  - Ahrg! Aaaa
-  - Hahaha
-  - "Nem um arranh\xE3o"
-  - Espere a minha vez
-  - Sinta minha Ira
-  - Verme
-  - "Miser\xE1vel"
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -438,39 +438,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
   m_PrefabInstance: {fileID: 2147519131684806214}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247976113}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44586fea7e8b3b54fb4ee4ace5ef2175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &247976113 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4435741936861119199, guid: 631fc42460058a846a134765df22ee7b, type: 3}
-  m_PrefabInstance: {fileID: 2147519131684806214}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &247976115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247976113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b792cf9fd65b0843a69843a23d5c62d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  falaTexto: {fileID: 1563915203}
-  balaoFala: {fileID: 21499874}
-  falas:
-  - Fraco! hahahaha
-  - Nada pode me atingir
-  - "Voc\xEA \xE9 fraco!"
-  - "Pat\xE9tico"
-  - "Sinta a for\xE7a da natureza!"
-  - "Ra\xEDzes amargas!"
-  - "Voc\xEA vai virar adubo!"
 --- !u!1 &319568733
 GameObject:
   m_ObjectHideFlags: 0
@@ -3656,11 +3629,11 @@ PrefabInstance:
       objectReference: {fileID: 1084437408}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: vida
-      value: 150
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: ataque
-      value: 40
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: camera
@@ -3794,13 +3767,50 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.1764706
       objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: balaoFala
+      value: 
+      objectReference: {fileID: 21499874}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: falaTexto
+      value: 
+      objectReference: {fileID: 1563915203}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: falas.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[0]'
+      value: Fraco! hahahaha
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[1]'
+      value: Nada pode me atingir
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[2]'
+      value: "Voc\xEA \xE9 fraco!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[3]'
+      value: "Pat\xE9tico"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[4]'
+      value: "Sinta a for\xE7a da natureza!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[5]'
+      value: "Ra\xEDzes amargas!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770529553925282458, guid: 631fc42460058a846a134765df22ee7b, type: 3}
+      propertyPath: 'falas.Array.data[6]'
+      value: "Voc\xEA vai virar adubo!"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4435741936861119199, guid: 631fc42460058a846a134765df22ee7b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 247976115}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 631fc42460058a846a134765df22ee7b, type: 3}
 --- !u!1001 &6310144676535695000
 PrefabInstance:

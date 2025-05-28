@@ -269,7 +269,6 @@ GameObject:
   - component: {fileID: 325857260}
   - component: {fileID: 325857259}
   - component: {fileID: 325857258}
-  - component: {fileID: 325857263}
   m_Layer: 5
   m_Name: BotaoLutar
   m_TagString: Untagged
@@ -460,7 +459,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DesfiladeiroEsquerdaBatalha
+          m_StringArgument: TorreLuta
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &325857261
@@ -501,28 +500,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325857256}
   m_CullTransparentMesh: 1
---- !u!95 &325857263
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325857256}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9040f27cdad3a2449a11893fff6e618a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &412331641
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +650,6 @@ GameObject:
   - component: {fileID: 661983198}
   - component: {fileID: 661983197}
   - component: {fileID: 661983196}
-  - component: {fileID: 661983195}
   m_Layer: 5
   m_Name: BotaoFugir
   m_TagString: Untagged
@@ -701,28 +677,6 @@ RectTransform:
   m_AnchoredPosition: {x: 278, y: -433}
   m_SizeDelta: {x: 219.5099, y: 83.8422}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &661983195
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 661983193}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9040f27cdad3a2449a11893fff6e618a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &661983196
 AudioSource:
   m_ObjectHideFlags: 0

@@ -3714,11 +3714,11 @@ PrefabInstance:
       objectReference: {fileID: 1084437408}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: vida
-      value: 10
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: ataque
-      value: 45
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: camera
@@ -3726,7 +3726,7 @@ PrefabInstance:
       objectReference: {fileID: 1461136012}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: defesa
-      value: 70
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 1808504878522799691, guid: 631fc42460058a846a134765df22ee7b, type: 3}
       propertyPath: somEspecialPronto

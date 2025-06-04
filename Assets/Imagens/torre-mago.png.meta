@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      torre-mago_0: 8229714163926742126
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

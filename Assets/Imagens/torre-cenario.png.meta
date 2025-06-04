@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      torre-cenario_0: 8060669440038517719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

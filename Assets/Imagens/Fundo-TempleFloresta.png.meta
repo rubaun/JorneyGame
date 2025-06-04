@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fundo-TempleFloresta_0: -5501033949216710472
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

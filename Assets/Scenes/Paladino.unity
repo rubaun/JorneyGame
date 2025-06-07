@@ -345,7 +345,6 @@ GameObject:
   m_Component:
   - component: {fileID: 243363181}
   - component: {fileID: 243363182}
-  - component: {fileID: 243363183}
   m_Layer: 0
   m_Name: EscreveTexto
   m_TagString: Untagged
@@ -381,110 +380,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texto: {fileID: 1171682797}
-  mensagemCompleta: "Um artefato ancestral, o Crepusculo Perdido, capaz de controlar
-    o  nascer e o por do sol, esta escondido nas ruinas de um reino esquecido.\n\nVoce
-    \xE9 Anduino, um Paladino aventureiro, convocado por uma visao profetica para
-    impedir que o artefato caia nas maos da Ordem das Sombras, um culto que planeja
-    mergulhar o mundo em escuridao eterna."
+  mensagemCompleta: "Tu \xE9s Anduino, paladino da sagrada luz, escolhido pelos des\xEDgnios
+    celestiais. Diante de ti se ergue um fardo glorioso: encontrar o Crep\xFAsculo
+    Perdido, artefato ancestral capaz de comandar o nascer e o p\xF4r do sol. Oculto
+    nas ru\xEDnas de um reino esquecido, seu poder \xE9 cobi\xE7ado pela vil Ordem
+    das Sombras, que deseja lan\xE7ar o mundo em trevas eternas. Ergue tua l\xE2mina,
+    fortalece teu esp\xEDrito, pois sobre teus ombros recai o destino da luz."
   velocidadeDigitacao: 0.05
   som: {fileID: 8300000, guid: 201471410c7edc446a5f66b83ad572ba, type: 3}
---- !u!82 &243363183
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 243363179}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0.3
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &505393249
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,8 +400,6 @@ GameObject:
   - component: {fileID: 505393253}
   - component: {fileID: 505393252}
   - component: {fileID: 505393251}
-  - component: {fileID: 505393254}
-  - component: {fileID: 505393255}
   m_Layer: 5
   m_Name: BotaoMudarFase
   m_TagString: Untagged
@@ -521,10 +422,10 @@ RectTransform:
   - {fileID: 1968803835}
   m_Father: {fileID: 1108457853}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 448.81, y: -396}
-  m_SizeDelta: {x: 219.5099, y: 83.8422}
+  m_AnchorMin: {x: 0.67612505, y: 0.09425926}
+  m_AnchorMax: {x: 0.7896042, y: 0.17214815}
+  m_AnchoredPosition: {x: 1.8099976, y: 0}
+  m_SizeDelta: {x: 1.5098877, y: -0.15779877}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &505393251
 MonoBehaviour:
@@ -570,16 +471,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 505393254}
+      - m_Target: {fileID: 1665557571}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: SairDaFloresta
-        m_Mode: 1
+        m_MethodName: CarregarCenaJogo
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: EscolhaFloresta
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &505393252
@@ -620,116 +521,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505393249}
   m_CullTransparentMesh: 1
---- !u!114 &505393254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505393249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5079496ce6ee43478780e9bc4deab8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  som: {fileID: 8300000, guid: c0fe2155bc4d58a4184425828780f689, type: 3}
---- !u!82 &505393255
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505393249}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1108457849
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,10 +569,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -866,10 +657,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1108457853}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 448.81, y: 37}
-  m_SizeDelta: {x: 573.5569, y: 647.8242}
+  m_AnchorMin: {x: 0.58643746, y: 0.2407778}
+  m_AnchorMax: {x: 0.88272923, y: 0.8425185}
+  m_AnchoredPosition: {x: -1.6900024, y: -8}
+  m_SizeDelta: {x: 4.556885, y: -2.1757812}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1171682797
 MonoBehaviour:
@@ -891,17 +682,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Um artefato ancestral, o Crepusculo Perdido, capaz de controlar o  nascer
-    e o por do sol, esta escondido nas ruinas de um reino esquecido.
-
-
-    Voce;
-    um aventureiro com sangue elfico, convocado por uma visao profetica para impedir
-    que o artefato caia nas maos da Ordem das Sombras, um culto que planeja mergulhar
-    o mundo em escuridao eterna.
-
-
-'
+  m_text: "Tu \xE9s Anduino, paladino da sagrada luz, escolhido pelos des\xEDgnios
+    celestiais. Diante de ti se ergue um fardo glorioso: encontrar o Crep\xFAsculo
+    Perdido, artefato ancestral capaz de comandar o nascer e o p\xF4r do sol. Oculto
+    nas ru\xEDnas de um reino esquecido, seu poder \xE9 cobi\xE7ado pela vil Ordem
+    das Sombras, que deseja lan\xE7ar o mundo em trevas eternas. Ergue tua l\xE2mina,
+    fortalece teu esp\xEDrito, pois sobre teus ombros recai o destino da luz."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -928,10 +714,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
+  m_fontSize: 35.25
   m_fontSizeBase: 38
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -980,135 +766,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171682795}
   m_CullTransparentMesh: 1
---- !u!1 &1316142109
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1316142111}
-  - component: {fileID: 1316142110}
-  m_Layer: 0
-  m_Name: Audio Source
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1316142110
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316142109}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 835aa289c5e64e543a2a605b95a3b0b9, type: 3}
-  m_Resource: {fileID: 8300000, guid: 835aa289c5e64e543a2a605b95a3b0b9, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &1316142111
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316142109}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1211.7528, y: 452.8727, z: 4.562768}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1594875506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,6 +853,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1665557570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1665557572}
+  - component: {fileID: 1665557571}
+  m_Layer: 0
+  m_Name: Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1665557571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665557570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5079496ce6ee43478780e9bc4deab8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  somBackgroundMenu: {fileID: 0}
+  somBotao: {fileID: 8300000, guid: c0fe2155bc4d58a4184425828780f689, type: 3}
+--- !u!4 &1665557572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665557570}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 540.7421, y: 84.937935, z: -0.5133997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1678495597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1228,10 +931,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1108457853}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 448.81, y: 0}
-  m_SizeDelta: {x: 848.8199, y: 972.4905}
+  m_AnchorMin: {x: 0.5156042, y: 0.048148148}
+  m_AnchorMax: {x: 0.95152086, y: 0.94074076}
+  m_AnchoredPosition: {x: 0.30999756, y: 6}
+  m_SizeDelta: {x: 11.819885, y: 8.4904785}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678495599
 MonoBehaviour:
@@ -1281,7 +984,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1898940137}
   - component: {fileID: 1898940136}
-  - component: {fileID: 1898940135}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1289,38 +991,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1898940135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898940134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44586fea7e8b3b54fb4ee4ace5ef2175, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nomePersonagem: Bob
-  vida: 100
-  ataque: 45
-  defesa: 78
-  especial: 0
-  estahVivo: 1
-  dB: {fileID: 0}
-  spriteDerrota: {fileID: 0}
-  ehHeroi: 0
-  pDesefa: {fileID: 0}
-  pSangrar: {fileID: 0}
-  somAtaque: []
-  somDefesa: []
-  somEspecial: []
-  somErroAtaque: []
-  somDano: []
-  somVitoria: {fileID: 0}
-  somMorte: {fileID: 0}
-  somEspecialPronto: {fileID: 0}
-  camera: {fileID: 0}
 --- !u!212 &1898940136
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1423,10 +1093,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 505393250}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.25076765, y: 0.21437086}
+  m_AnchorMax: {x: 0.7491162, y: 0.7975506}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.000030518, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1968803836
 MonoBehaviour:
@@ -1475,11 +1145,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 25.1
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 10.05
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -1536,5 +1206,5 @@ SceneRoots:
   - {fileID: 8962692}
   - {fileID: 1898940137}
   - {fileID: 1594875508}
-  - {fileID: 1316142111}
   - {fileID: 243363181}
+  - {fileID: 1665557572}

@@ -16,15 +16,56 @@ public class Menu : MonoBehaviour
         player = GameObject.Find("Audio Source").GetComponent<SoundPlayer>();
     }
 
-    private void Update()
+    private void OnLevelWasLoaded(int level)
     {
-        if(SceneManager.GetActiveScene().name == "Menu")
+        if (SceneManager.GetActiveScene().name == "MenuPrincipal" && SceneManager.GetActiveScene().buildIndex == level)
         {
             if (somBackgroundMenu != null && player != null)
             {
                 player.PlaySoundBackground(somBackgroundMenu);
             }
         }
+        else if (SceneManager.GetActiveScene().name == "EscolhaFloresta" && SceneManager.GetActiveScene().buildIndex == level)
+        {
+            if (somBackgroundMenu != null && player != null)
+            {
+                player.PlaySoundBackground(somBackgroundMenu);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "FlorestaEsquerdaBatalha" && SceneManager.GetActiveScene().buildIndex == level)
+        {
+            if (somBackgroundMenu != null && player != null)
+            {
+                player.PlaySoundBackground(somBackgroundMenu);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "FlorestaDireitaBatalha" && SceneManager.GetActiveScene().buildIndex == level)
+        {
+            if (somBackgroundMenu != null && player != null)
+            {
+                player.PlaySoundBackground(somBackgroundMenu);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "FlorestaDireitaPortal" && SceneManager.GetActiveScene().buildIndex == level)
+        {
+            if (somBackgroundMenu != null && player != null)
+            {
+                player.PlaySoundBackground(somBackgroundMenu);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "FlorestaSaidaEsquerda" && SceneManager.GetActiveScene().buildIndex == level)
+        {
+            if (somBackgroundMenu != null && player != null)
+            {
+                player.PlaySoundBackground(somBackgroundMenu);
+            }
+        }
+        
+    }
+
+    private void Update()
+    {
+        OnLevelWasLoaded(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void CarregarCenaJogo(string nomeCena)

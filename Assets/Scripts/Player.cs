@@ -26,16 +26,16 @@ public class Player : MonoBehaviour
 
     private Animator anim;
     private SpriteRenderer spriteRenderer;
-    private AudioSource audioSource;
+    private SoundPlayer audioSource;
     private FalasPersonagem falasPersonagem;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundPlayer>();
 
-        if(!falasPersonagem && !ehHeroi)
+        if (!falasPersonagem && !ehHeroi)
         {
             falasPersonagem = GetComponent<FalasPersonagem>();
         }
@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
         if (especial >= 3)
         {
             dB.RecebeTexto($"{nomePersonagem} especial pronto!");
-            audioSource.PlayOneShot(somEspecialPronto);
+            audioSource.PlaySound(somEspecialPronto);
             return true;
         }
         else
@@ -214,7 +214,7 @@ public class Player : MonoBehaviour
     private void PlaySomDano()
     {
         int som = Random.Range(0, somDano.Length);
-        audioSource.PlayOneShot(somDano[som]);
+        audioSource.PlaySound(somDano[som]);
     }
 
     private void ParticulaDefesa()
@@ -230,34 +230,34 @@ public class Player : MonoBehaviour
     private void PlaySomAtaque()
     {
         int som = Random.Range(0, somAtaque.Length);
-        audioSource.PlayOneShot(somAtaque[som]);
+        audioSource.PlaySound(somAtaque[som]);
     }
     private void PlaySomErroAtaque()
     {
         int som = Random.Range(0, somErroAtaque.Length);
-        audioSource.PlayOneShot(somErroAtaque[som]);
+        audioSource.PlaySound(somErroAtaque[som]);
     }
 
     private void PlaySomDefesa()
     {
         int som = Random.Range(0, somDefesa.Length);
-        audioSource.PlayOneShot(somDefesa[som]);
+        audioSource.PlaySound(somDefesa[som]);
     }
 
     private void PlaySomEspecial()
     {
         int som = Random.Range(0, somEspecial.Length);
-        audioSource.PlayOneShot(somEspecial[som]);
+        audioSource.PlaySound(somEspecial[som]);
     }
 
     public void PlaySomMorte()
     {
-        audioSource.PlayOneShot(somMorte);
+        audioSource.PlaySound(somMorte);
     }
 
     public void PlaySomVitoria()
     {
-        audioSource.PlayOneShot(somVitoria);
+        audioSource.PlaySound(somVitoria);
     }
 
     IEnumerator TocarDefesa()
@@ -295,12 +295,12 @@ public class Player : MonoBehaviour
     IEnumerator timerSomVitoria()
     {
         yield return new WaitForSeconds(1.5f);
-        audioSource.PlayOneShot(somVitoria);
+        audioSource.PlaySound(somVitoria);
     }
 
     private void CameraTreme(float magnitude)
     {
-        audioSource.PlayOneShot(somVitoria);
+        audioSource.PlaySound(somVitoria);
         camera.GetComponent<CameraShake>().ShakeCamera(0.5f, magnitude);
     }
 }

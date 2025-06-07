@@ -45,6 +45,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Floresta/Paladino/FlorestaSaidaDireita.unity
     guid: 0509a4e9ea7d103448fe65e8dc92ba6b
   - enabled: 1
+    path: Assets/Scenes/Floresta/Paladino/FlorestaSaidaEsquerda.unity
+    guid: 74b74937c12959e448f046fa0a546341
+  - enabled: 1
     path: Assets/Scenes/Floresta/Mago/MagoEscolhaFloresta.unity
     guid: 1decabab5707f5a4e88ce2dfde0a84f4
   - enabled: 1

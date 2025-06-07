@@ -8,15 +8,15 @@ public class EscreveTexto : MonoBehaviour
     [TextArea] // Campo de texto para editar a mensagem completa no Inspector
     [SerializeField] private string mensagemCompleta; // Texto completo a ser exibido
     [SerializeField] private float velocidadeDigitacao = 0.05f; // Tempo entre letras
-    private AudioSource tocadorSom;
     [SerializeField] AudioClip som;
+    private SoundPlayer tocadorSom;
 
 
     private bool escrevendo = false;
 
     void Start()
     {
-        tocadorSom = GetComponent<AudioSource>(); // Obtém o componente AudioSource
+        tocadorSom = GameObject.Find("Audio Source").GetComponent<SoundPlayer>(); // Obtém o componente AudioSource
         texto.text = ""; // Limpa o texto atual
         StartCoroutine(DigitarTexto());
     }
@@ -28,7 +28,7 @@ public class EscreveTexto : MonoBehaviour
         foreach (char letra in mensagemCompleta) // Itera sobre cada letra da mensagem
         {
             texto.text += letra;
-            tocadorSom.PlayOneShot(som); // Toca o som de digitação
+            tocadorSom.PlaySound(som); // Toca o som de digitação
             yield return new WaitForSeconds(velocidadeDigitacao); // Espera antes de escrever a próxima letra
         }
 

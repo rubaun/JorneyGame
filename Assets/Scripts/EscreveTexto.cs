@@ -18,7 +18,10 @@ public class EscreveTexto : MonoBehaviour
     {
         tocadorSom = GameObject.Find("Audio Source").GetComponent<SoundPlayer>(); // Obtém o componente AudioSource
         texto.text = ""; // Limpa o texto atual
-        StartCoroutine(DigitarTexto());
+        if(som != null)
+        {
+            StartCoroutine(DigitarTexto());
+        }        
     }
 
     private IEnumerator DigitarTexto() // Coroutina para digitar o texto

@@ -381,10 +381,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texto: {fileID: 1171682797}
   mensagemCompleta: "Tu \xE9s Anduino, paladino da sagrada luz, escolhido pelos des\xEDgnios
-    celestiais. Diante de ti se ergue um fardo glorioso: encontrar o Crep\xFAsculo
+    celestiais. \nDiante de ti se ergue um fardo glorioso: encontrar o Crep\xFAsculo
     Perdido, artefato ancestral capaz de comandar o nascer e o p\xF4r do sol. Oculto
     nas ru\xEDnas de um reino esquecido, seu poder \xE9 cobi\xE7ado pela vil Ordem
-    das Sombras, que deseja lan\xE7ar o mundo em trevas eternas. Ergue tua l\xE2mina,
+    das Sombras, que deseja lan\xE7ar o mundo em trevas eternas. \nErgue tua l\xE2mina,
     fortalece teu esp\xEDrito, pois sobre teus ombros recai o destino da luz."
   velocidadeDigitacao: 0.05
   som: {fileID: 8300000, guid: 201471410c7edc446a5f66b83ad572ba, type: 3}
@@ -422,10 +422,10 @@ RectTransform:
   - {fileID: 1968803835}
   m_Father: {fileID: 1108457853}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.67612505, y: 0.09425926}
-  m_AnchorMax: {x: 0.7896042, y: 0.17214815}
-  m_AnchoredPosition: {x: 1.8099976, y: 0}
-  m_SizeDelta: {x: 1.5098877, y: -0.15779877}
+  m_AnchorMin: {x: 0.67612505, y: 0.14325929}
+  m_AnchorMax: {x: 0.79064584, y: 0.22100002}
+  m_AnchoredPosition: {x: 0.6498108, y: -0.2000122}
+  m_SizeDelta: {x: -0.4901123, y: -0.15779877}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &505393251
 MonoBehaviour:
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 9215191660496094313, guid: dd3818e3cfac0544e8d24ecf4a59d6f3, type: 3}
+  m_Sprite: {fileID: -8695538805958314294, guid: 530acc54d7c287a4a87aceaaf0c7e40a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -657,10 +657,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1108457853}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.58643746, y: 0.2407778}
-  m_AnchorMax: {x: 0.88272923, y: 0.8425185}
-  m_AnchoredPosition: {x: -1.6900024, y: -8}
-  m_SizeDelta: {x: 4.556885, y: -2.1757812}
+  m_AnchorMin: {x: 0.6057709, y: 0.275}
+  m_AnchorMax: {x: 0.8634376, y: 0.7934074}
+  m_AnchoredPosition: {x: -1.6900024, y: 0}
+  m_SizeDelta: {x: -6.059601, y: -7.7510986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1171682797
 MonoBehaviour:
@@ -683,10 +683,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Tu \xE9s Anduino, paladino da sagrada luz, escolhido pelos des\xEDgnios
-    celestiais. Diante de ti se ergue um fardo glorioso: encontrar o Crep\xFAsculo
+    celestiais. \nDiante de ti se ergue um fardo glorioso: encontrar o Crep\xFAsculo
     Perdido, artefato ancestral capaz de comandar o nascer e o p\xF4r do sol. Oculto
     nas ru\xEDnas de um reino esquecido, seu poder \xE9 cobi\xE7ado pela vil Ordem
-    das Sombras, que deseja lan\xE7ar o mundo em trevas eternas. Ergue tua l\xE2mina,
+    das Sombras, que deseja lan\xE7ar o mundo em trevas eternas. \nErgue tua l\xE2mina,
     fortalece teu esp\xEDrito, pois sobre teus ombros recai o destino da luz."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -696,8 +696,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -714,14 +714,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.25
-  m_fontSizeBase: 38
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 32
+  m_fontStyle: 0
+  m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -828,7 +828,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -176401947592947516, guid: 0be39e6322ca6914798fbfbf0034a09f, type: 3}
-  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+  m_Color: {r: 0.31941974, g: 0.6981132, b: 0.51812303, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -956,7 +956,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4567298598502439368, guid: 0ee1a818e7e389a49b78b939c637fee2, type: 3}
+  m_Sprite: {fileID: -8695019518180747640, guid: 3333e86aeb0583241af23fe9bf37ec43, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
